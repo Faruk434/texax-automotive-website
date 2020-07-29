@@ -1,0 +1,818 @@
+/*
+6200ee
+3700b3
+bb86fc
+*/
+
+/*-- Body Reset --*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'montserrat', sans-serif;
+    color: #616971;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*typography start*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #606060;
+    font-family: poppins;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 20px 0px 15px 0px;
+    font-weight: 600
+}
+
+/*typography end*/
+
+/*Main css Start*/
+/*nav part start*/
+
+
+.nav_style {
+    background: #FFC400 !important;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(138, 155, 165, 0.15);
+    box-shadow: 0px 10px 30px 0px rgba(138, 155, 165, 0.15);
+}
+
+.navbar-nav li {}
+
+.navbar-nav li a {
+    /*    color: #ff7230 !important;*/
+    color: #252833 !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.navbar-nav li a:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 2px;
+    left: 10%;
+    background: #E60924 !important;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.navbar-nav li a:hover:after {
+    width: 80%;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #E60924 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #E60924 !important;
+}
+
+/*Nav part eand*/
+
+/*Header part start*/
+
+.header_bg {
+    width: 100%;
+    height: 870px;
+    background: linear-gradient(206deg, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, .5) 50%), url(..//img/automotive1.jpg);
+      background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+          -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, .5);
+    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, .5);
+   }
+
+
+.header_content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+.header_content h1 {
+    color: #FFC400;
+    font-family: 'montserrat', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0px 5px 6px rgba(0, 0, 0, .4);
+}
+
+.header_content h3 {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-shadow: 0px 5px 6px rgba(0, 0, 0, .4);
+}
+
+.header_content span {
+    color: #e60924;
+}
+
+.header_content button {
+    /*    padding: 8px 20px;*/
+    border: 1px solid #e60924;
+    width: 200px !important;
+    height: 45px;
+    margin: 50px 20px;
+    background: transparent;
+    color: #e60924;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header_content button:hover {
+    background: #e60924;
+    color: #f4f4f4;
+    -webkit-box-shadow: 0px 3px 10px #454545;
+    box-shadow: 0px 3px 10px #454545;
+}
+
+.jumbotron {
+    display: block;
+    width: 75%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 12.5%;
+    background: #FFC400;
+    -webkit-transform: translateY(250px);
+    transform: translateY(250px);
+    -webkit-box-shadow: 0px 10px -15px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9) !important;
+    padding: 30px;
+}
+
+.jumbotron button {
+    width: 185px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #454545;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #454545;
+    border-radius: 2px;
+}
+
+.jumbotron button:hover {
+    background: #e60924;
+    border: none;
+    color: #FFC400 !important;
+    -webkit-box-sizing: 0px 5px 15px rgba(245, 240, 240, 0.4) !important;
+    box-sizing: 0px 5px 15px rgba(245, 240, 240, 0.4) !important;
+}
+
+.jumbotron img {
+    width: 200px !important;
+    height: auto;
+ }
+
+
+.jumbotron h2 {
+    color: #454545 !important;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+/*Header part end*/
+
+/*featured part start*/
+.featured_section {
+    width: 100%;
+    height: 720px;
+     }
+
+.card-body {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.featured_section .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.featured_section .card:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.featured_section .card:hover:after {
+    opacity: 1;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.featured_section h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e60924;
+    letter-spacing: 2px;
+}
+
+.featured_section p {
+    padding: 0px 180px;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+
+/*featured part end*/
+
+/*used car part start*/
+.used_section {
+    width: 100%;
+    height: 870px;
+    padding: 80px 0px;
+}
+
+.used_section h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e60924;
+    letter-spacing: 2px;
+}
+
+.used_section p {
+    padding: 0px 180px;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.card1 {
+    border: 1px solid #e60924 !important;
+    width: 100%;
+    height: auto;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+.card1_top {
+    /*    background: #e60924;*/
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e60924;
+}
+
+.card1_top h2 {
+    color: #e60924 !important;
+}
+
+.card1:hover .card1_top {
+    background: #e60924;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+.card1:hover h2 {
+    color: #fff !important;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+.card1_top h2 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.card1 img {
+    width: 250px;
+    background: #000 !important;
+    margin-top: 12px
+}
+
+
+.card1-body h5 {
+    font-size: 14px;
+    padding: 0px 20px;
+    line-height: 1.6;
+    width: 100%;
+    height: 178px;
+    color: #454545;
+    padding-top: 30px;
+}
+
+.card_btn {
+    /*    background: #e60924;*/
+    display: block;
+    padding: 5px 10px;
+}
+
+.card_btn a {
+    padding: 10px 20px;
+    height: 45px;
+    width: 200px;
+    border: 1px solid #e60924;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #e60924;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+
+.card_btn a:hover {
+    background: #e60924;
+    color: #fff;
+    -webkit-box-shadow: 0px 3px 10px #454545;
+    box-shadow: 0px 3px 10px #454545;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.card1:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    -webkit-box-shadow: 0px 3px 10px #454545;
+    box-shadow: 0px 3px 10px #454545;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+/*used car part end*/
+
+/*fixed background Part start*/
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000 !important;
+    height: 815px;
+    padding: 160px 0px;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    background: url(../img/automotive1.jpg);
+    position: fixed;
+    z-index: -999 !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.fixed:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.7);
+}
+.fixed_text a:hover{
+    background: #E60924!important;
+    color: #fff!important;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.fixed_text h2 {
+    color: #E60924;
+    font-size: 48px;
+   
+}
+
+.fixed_text h4 {
+    color: #E4E1E1;
+    font-size: 32px;
+    margin-bottom: 90px;
+}
+
+/*fixed background Part end*/
+
+/*Care Part Start*/
+.care_bg {
+    width: 100%;
+    height: 680px;
+    padding: 100px 0px;
+}
+
+.care_text {
+    margin-bottom: 50px;
+}
+#card_4{
+    margin-top: 100px;
+}
+
+.care_text h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e60924;
+    margin-bottom: 20px;
+}
+
+
+.care_text p {
+    padding: 0px 180px;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.card4 {
+    background: #e60924;
+    overflow: hidden !important;
+    position: relative;
+    border-radius: 2px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.card4 .details h3{
+    font-size: 18px!important;
+}
+
+.card4 .details h5{
+    font-size: 16px!important;
+     margin-left: 10px;
+}
+
+.imgBox img {
+    width: 100% !important;
+    height: auto;
+    overflow: hidden;
+}
+
+.card4 .imgBox {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box !important;
+    height: 100%;
+
+}
+
+.card4 .details {
+	position: absolute;
+	bottom: -105px;
+	background: #e60924;
+	width: 100%;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	-webkit-transition: .6s;
+	transition: .6s;
+}
+
+.card4 .details:hover {
+    background: #000;
+    opacity: .8;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.card4:hover {
+    -webkit-box-shadow: 0px 5px 10px #454545;
+    box-shadow: 0px 5px 10px #818181;
+    -webkit-transition-duration: .3s;
+    transition-duration: .4s;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+
+.card4:hover .details {
+    bottom: 0;
+}
+
+.card4 h5{
+     margin-left: 10px;
+}
+.card4 ul{
+   margin-left: 120px; 
+}
+
+.card4 ul  li:nth-child(1){
+     margin-left: 20px;
+}
+
+.card4 ul  li:nth-child(2){
+     margin-left: 20px;
+}
+.card4 ul  li:nth-child(3){
+     margin-left: 40px;
+}
+
+.card4 ul  li:nth-child(4){
+     margin-left: 52px;
+}
+
+
+.card4 ul {
+    padding: 0;
+    display: block;
+    margin: 0;
+    list-style-type: none;
+}
+
+.card4 ul li {
+	margin: -2px 0px 0px !important;
+    font-size: 13px;
+}
+
+
+.card4 ul.colors li {
+    width: 16px;
+    height: 16px;
+}
+
+
+/*
+
+.card4 a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%!important;
+    text-align: center;
+    text-decoration: none;
+    background: red;
+    color: #FFF;
+    display: block;
+    padding: 3px 0px;
+    margin: 16px 0px;
+    font-family: montserrat;
+    font-weight: 600;
+   line-height: 50px;
+}
+*/
+
+
+
+
+
+
+/*Care Part End*/
+
+.contact_part {
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.contact_part img {
+    width: 26%
+}
+
+.news-input {
+    border-radius: 100px 0px 0px 100px !important;
+    min-width: 150px;
+    min-height: 45px;
+}
+
+.input-group-append span {
+    border-radius: 0px 100px 100px 0px !important;
+    background: #E60924;
+    color: #fff;
+    min-height: 45px;
+    min-width: 130px;
+    cursor: pointer;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: #e60924 !important;
+}
+
+
+
+:-ms-input-placeholder {
+    color: #e60924 !important;
+}
+
+
+
+::placeholder {
+    color: #e60924 !important;
+}
+
+.input-group > .form-control:not(:last-child) {
+    border: 1px solid #FFC400;
+}
+.input-group{
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.input-group:hover{
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+.contact_icon {}
+
+.contact_icon ul {
+    list-style: none;
+}
+
+.contact_icon li {
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+
+.contact_icon li i {
+    color: #E60924;
+}
+
+.contact_icon li a {
+    text-decoration: none !important;
+}
+
+.contact_icon li i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E60924;
+    border-radius: 50%;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+.contact_icon li i:hover {
+    background: #E60924;
+    color: #fff;
+    /*    box-shadow: 0px 5px 15px rgba(0,0,0,.4);*/
+    -webkit-transform: translatey(-5px);
+    transform: translatey(-5px);
+}
+
+/*contact part end*/
+
+/*go to top*/
+#myBtn {
+
+    /*    margin-right: 20px;*/
+    /*    display: none;*/
+    position: fixed;
+    bottom: 78px;
+    right: 40px;
+    z-index: 1111!important;
+
+
+}
+
+.scrolltop i {
+    font-size: 35px;
+    color: #F1C406;
+    
+
+}
+
+/*Footer part start*/
+footer{
+    background: #f1c406;
+    padding: 5px 0px;
+   }
+footer p{
+    padding: 8px 0px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #454545;
+    
+}
+/*Footer part end*/
+
+/*Main css End*/
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+
+:-ms-input-placeholder {
+    font-size: 14px;
+}
+
+
+::placeholder {
+    font-size: 14px;
+}
+
+/*-- Fixed Background Image --*/
